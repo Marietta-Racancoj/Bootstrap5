@@ -3,9 +3,9 @@
 <head>
   <title>Bootstrap 5 Demo</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Ensures that content adjusts to various screen sizes -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
+    <style> /*CSS custom style*/
         .bg-dark-blue{
             background-color: rgb(5, 5, 104);
         }
@@ -15,18 +15,16 @@
     </style>
 </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
-    <div class="container-fluid p-5 bg-dark-blue text-white text-center"> <!--fluid takes up whole page-->
+    <div class="container-fluid p-5 bg-dark-blue text-white text-center"> <!--fluid takes up whole view point-->
         <h1 class="my-font">Monmouth University Locations</h1>
         <p class="my-font">Reserve rooms and create events!</p> 
     </div>
 
-    <div class="row"> <!-- mt = margin top, mb = margin bottom-->
+    <div class="row"> <!-- mt = margin top, mb = margin bottom, fluid ensures that content dynamically adjust to various screen sizes-->
         <div class="container-fluid col-lg-4 col-md-4 col-sm-8 bg-light rounded">  <!--sm is how much of the 12 point space it takes up on small screen-->
             <div class="container-fluid bg-dark text-white text-center py-3 rounded mb-3 w-100"><h3>Howard Hall 201</h3></div>
             <img src="BH101ComputerLab.webp" alt="Class room" class="img-thumbnail rounded mb-3" />
-            <p class="px-4">Max Capacity: 12</p>
+            <p class="px-4">Max Capacity: 12</p> <!--px = padding on the x axis-->
             <p class="px-4">Event Types: Study Sessions</p>
             <p class="px-4">Amenities: Table, 12 chairs, whiteboard, TV</p>
             <p class="px-4">Time Limit: 5 hrs</p>
@@ -48,5 +46,7 @@
             <p class="px-4">Time Limit: 5 hrs</p>
         </div>
     </div>
+    <!--Ensures proper rendering, integrity, and who wrote the code -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
